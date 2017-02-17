@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>       
+        <title>Hiking Survey</title>
+
+        <!-- Vendor files -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+        <link href="/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+        <script src="/lib/jquery/dist/jquery.min.js" type="text/javascript"></script>
+        <script src="/lib/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+        <script src="/lib/angular/angular.min.js"></script>
+        <script src="/lib/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="/lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+        <script src="/lib/angular-route/angular-route.min.js"></script>
+
+        <!-- my files -->
+        <link href="css/main.css" rel="stylesheet" type="text/css">
+        <script src="js/app.js"></script>
+        <script src="js/controllers/surveyCtrl.js"></script>
+        </head>
+        <body ng-app="hikingSurvey">
+            <!-- begin header -->
+       <!--      <nav class="navbar navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#/">BYU</a>
+                    </div>
+                </div>
+            </nav> -->
+
+               <div class="text-center tab-bar">
+                    <ul class="pagination">
+                        <li><a class="tab" href="#/">STEP 1</a></li>
+                        <li class="active"><a class="tab" href="#/survey">STEP 2</a></li>
+                        <li><a  class="tab" href="#/hiker">STEP 3</a></li>
+                    </ul>
+                </div>
+
+            <!-- end header -->
+            <div ng-view></div>
+            <div class='footer'>
+            </div>
+
+        </body>
+</html>

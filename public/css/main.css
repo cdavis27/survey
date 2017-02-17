@@ -1,0 +1,165 @@
+/*main blue: #4f8ece*/
+/*light blue: #f3f6f8*/
+/*green: #aad223*/
+/*light gray: #eaeaea*/
+/*gray: #c1c1c1*/
+/*dark gray: #5d6567*/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #c1c1c1;
+}
+
+p {
+    font-size: 12px;
+}
+
+.navbar {
+    /*background-color: #f3f6f8;*/
+}
+
+.tab-bar {
+    margin: 0 0 0 0;
+    background-color: #f3f6f8;
+    border-bottom: 1px solid #eaeaea;
+    height: 51px;
+}
+
+.pagination {
+    padding: 0;
+    margin: 0;
+}
+
+.pagination>.active>a {
+    background-color: #4f8ece;
+    color: #fff !important;
+}
+.pagination>li>a {
+    border: none;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-radius: 0;
+}
+
+.tab {
+    width: 300px;
+    height: 50px;
+    padding-top: 15px !important;
+    color: #5d6567 !important;
+    font-weight: 400;
+    font-size: 12px;
+    font-family: 'Montserrat'
+}
+
+/*.main {
+    height: 1000px;
+}*/
+
+/*.questions-side {
+    min-height:100%;
+    width: 50%;
+    background-color: #353a3e;
+}*/
+
+/*.graphics-side{
+    float: right;
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+} */
+
+.question {
+    margin: 30px 150px 30px 150px;
+}
+
+.section-title {
+    text-align: center;
+    margin-top: 90px;
+    color: #5d6567;
+    font-size: 24px;
+    font-family: 'Montserrat'
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #5d6567;
+    font-size: 16px;
+    font-weight: 100;
+    padding-bottom: 30px;
+}
+
+.question-title {
+    padding-top: 20px;
+    padding-left: 0;
+}
+
+.question-subtitle {
+    margin-left: 10px;
+}
+
+.line {
+    margin: 0 150px 0 150px;
+    color: #d1d2d3;
+}
+
+.gender {
+    /*font-size: 14px;*/
+}
+
+.form-group {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.textbox-label {
+    margin-top: 18px;
+}
+
+/*radio button style*/
+label {
+  display: block;
+  cursor: pointer;
+  line-height: 2.5;
+  font-size: 1.5em;
+}
+
+[type="radio"] {
+  border: 0; 
+  clip: rect(0 0 0 0); 
+  height: 1px; margin: -1px; 
+  overflow: hidden; 
+  padding: 0; 
+  position: absolute; 
+  width: 1px;
+}
+
+[type="radio"] + span {
+    display: block;
+}
+
+
+[type="radio"] + span:before {
+    content: '';
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: -0.25em;
+    border-radius: 1em;
+    border: 0.12em solid #fff;
+    box-shadow: 0 0 0 0.07em #d1d2d3;
+    margin-right: 0.75em;
+    transition: 0.5s ease all;
+}
+
+[type="radio"]:checked + span:before {
+    background: #4f8ece;
+    box-shadow: 0 0 0 0.07em #4f8ece;
+}
+
+[type="radio"]:focus + span:after {
+    font-size: 1.5em;
+    line-height: 1;
+    vertical-align: -0.125em;
+}
